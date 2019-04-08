@@ -2,3 +2,4 @@ bzImage
 initramfs*
 *.elf
 root/*
+init
