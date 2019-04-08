@@ -1,0 +1,4 @@
+bzImage
+initramfs*
+*.elf
+root/*
