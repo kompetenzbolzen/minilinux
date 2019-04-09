@@ -1,5 +1,8 @@
 #!/bin/bash	
 
-cd root
-find . -print -depth | cpio -ov -H newc > ../initramfs.cpio.gz
+cd init
+make build copy
+cd ..
 
+cd root
+find . | cpio -o -H newc | gzip > ../initramfs.cpio.gz

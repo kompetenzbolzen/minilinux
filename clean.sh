@@ -3,6 +3,6 @@
 cd init
 make clean
 cd ../root
-rm -df *
+rm -df init
 cd ..
 rm -df initramfs.cpio.gz
