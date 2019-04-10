@@ -1,3 +1,13 @@
+From 1ca4ce5a2d0992b0c324741e325d26ca624cf0be Mon Sep 17 00:00:00 2001
+From: Jonas Gunz <himself@jonasgunz.de>
+Date: Wed, 10 Apr 2019 20:44:14 +0200
+Subject: [PATCH] Updated kernel/panic.c: Added megumin
+
+Kernel prints ASCII art of megumin on Panic. Why? Because.
+---
+ kernel/panic.c | 62 +++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 61 insertions(+), 1 deletion(-)
+
 diff --git a/kernel/panic.c b/kernel/panic.c
 index 0ae0d7332f12..0a8ad8757ab6 100644
 --- a/kernel/panic.c
@@ -85,3 +95,6 @@ index 0ae0d7332f12..0a8ad8757ab6 100644
  #ifdef CONFIG_DEBUG_BUGVERBOSE
  	/*
  	 * Avoid nested stack-dumping if a panic occurs during oops processing
+-- 
+2.21.0
+
